@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connexion TikTok – GTA6 Clips</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; color: #1d1d1f; background: #fff; }
+  code { display: block; word-break: break-all; background: #f2f2f2; padding: 12px; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h1>Connexion TikTok</h1>
+<p>Copie l'<strong>adresse complète</strong> de cette page (barre d'adresse du navigateur) et colle-la dans PowerShell, là où « clipper tiktok-login » te le demande.</p>
+<p id="status"></p>
+<script>
+  // Affiche seulement si un code est présent ; rien n'est envoyé nulle part.
+  var p = new URLSearchParams(window.location.search);
+  document.getElementById("status").textContent = p.get("code")
+    ? "✔ Code reçu : tu peux copier l'adresse de la page."
+    : (p.get("error") ? "✘ TikTok a renvoyé une erreur : " + p.get("error") : "");
+</script>
+</body>
+</html>
